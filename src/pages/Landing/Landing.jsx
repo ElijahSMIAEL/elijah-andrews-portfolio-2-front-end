@@ -1,9 +1,9 @@
 import styles from './Landing.module.css'
 
-const Landing = ({ user }) => {
+const Landing = () => {
   return (
     <main className={styles.container}>
-      <h1>hello, {user ? user.name : 'friend'}</h1>
+      <h1>Elijah Andrews</h1>
     </main>
   )
 }
