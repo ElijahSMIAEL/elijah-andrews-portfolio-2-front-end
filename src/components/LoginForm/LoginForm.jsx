@@ -4,6 +4,7 @@ import styles from './LoginForm.module.css'
 import * as authService from '../../services/authService'
 
 const LoginForm = props => {
+  const path = props.from
   const [formData, setFormData] = useState({
     email: '',
     pw: '',
@@ -20,7 +21,7 @@ const LoginForm = props => {
     try {
       await authService.login(formData)
       props.handleSignupOrLogin()
-      navigate('/')
+      navigate(`/${path}`)
     } catch (err) {
       props.updateMessage(err.message)
     }

@@ -4,6 +4,7 @@ import styles from './SignupForm.module.css'
 import * as authService from '../../services/authService'
 
 const SignupForm = props => {
+  const path = props.from
   const navigate = useNavigate()
   const [formData, setFormData] = useState({
     name: '',
@@ -30,7 +31,7 @@ const SignupForm = props => {
     try {
       await authService.signup(formData, photoData.photo)
       props.handleSignupOrLogin()
-      navigate('/')
+      navigate(`/${path}`)
     } catch (err) {
       props.updateMessage(err.message)
     }
@@ -94,7 +95,7 @@ const SignupForm = props => {
           onChange={handleChange}
         />
       </div>
-      <div className={styles.inputContainer}>
+      {/* <div className={styles.inputContainer}>
         <label htmlFor="photo-upload" className={styles.label}>
           Upload Photo
         </label>
@@ -104,7 +105,7 @@ const SignupForm = props => {
           name="photo"
           onChange={handleChangePhoto}
         />
-      </div>
+      </div> */}
       <div className={styles.inputContainer}>
         <button disabled={isFormInvalid()} className={styles.button}>
           Sign Up

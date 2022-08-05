@@ -33,15 +33,15 @@ const App = () => {
         />
         <Route
           path='/contact'
-          element={<Contact />}
+          element={user ? <Contact /> : <Login handleSignupOrLogin={handleSignupOrLogin} from={'contact'}/>}
         />
         <Route
           path='/resume'
-          element={<Resume />}
+          element={user ? <Resume /> : <Login handleSignupOrLogin={handleSignupOrLogin} from={'resume'}/>}
         />
         <Route
           path='/works'
-          element={<Works />}
+          element={<Works profile={user?.profile}/>}
         />
       </Routes>
     </>
