@@ -1,4 +1,7 @@
 body {
+  background-image: url('/public/images/portfolio-medium-background-2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
     'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 
@@ -10,4 +13,30 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-body {
+  padding-top: 0px;
+  align-items: center;
+}
+
+.card {
+  padding: 5px;
+  border: solid 3px #415a77;
+  height: fit-content;
+  background-color: #778da9;
+  color: white;
+}
+
+@media only screen and (min-width:1500px) {
+  body {
+    background-image: url('/public/images/portfolio-background-2.jpg');
+    background-size: cover;
+  }
 }

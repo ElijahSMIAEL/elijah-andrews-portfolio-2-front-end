@@ -42,6 +42,7 @@ const AddWorkForm = (props) => {
         onSubmit={handleSubmit}
         autoComplete='off'
       >
+      <label htmlFor="title-input">Title:</label>
       <input 
         type="text" 
         name="title" 
@@ -49,6 +50,7 @@ const AddWorkForm = (props) => {
         value={formData.title}
         onChange={handleChange}
       />
+      <label htmlFor="description-input">Description:</label>
       <input 
         type="text"
         name='description' 
@@ -56,6 +58,7 @@ const AddWorkForm = (props) => {
         value={formData.description}
         onChange={handleChange}
       />
+      <label htmlFor="deployedLink-input">GitHub Link:</label>
       <input 
         type="text" 
         name='githubLink'  
@@ -63,6 +66,7 @@ const AddWorkForm = (props) => {
         value={formData.githubLink}
         onChange={handleChange}
       />
+      <label htmlFor="deployedLink-input">Deployed Link:</label>
       <input 
         type="text" 
         name='deployedLink' 
@@ -70,6 +74,7 @@ const AddWorkForm = (props) => {
         value={formData.deployedLink}
         onChange={handleChange}
       />
+      <label htmlFor="photo-upload">Photo:</label>
       <input
         type="file"
         className="form-control"

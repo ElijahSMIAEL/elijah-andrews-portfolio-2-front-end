@@ -29,23 +29,23 @@ const Works = (props) => {
     photoData.append('photo', photo)
     return await workService.addPhoto(photoData, id)
   }
-  console.log(works)
+  
   return(
     <>
       <main>
-      <div>
-      {works.map(work =>
-        <WorkCard
-          key={work._id}
-          work={work}
-          />
-      )}
-      </div>
-      { isOwner ?
-        <AddWorkForm handleAddWork={handleAddWork}/>
-        :
-        <h1>Nope</h1>
-      }
+        { isOwner ?
+          <AddWorkForm handleAddWork={handleAddWork}/>
+          :
+          <></>
+        }
+        <div className={styles.worksContainer}>
+          {works.map(work =>
+            <WorkCard
+              key={work._id}
+              work={work}
+            />
+          )}
+        </div>
       </main>
     </>
   )

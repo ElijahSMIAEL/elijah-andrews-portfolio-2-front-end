@@ -6,10 +6,10 @@ const NavBar = ({ user, handleLogout }) => {
     <>
         <nav>
           <div className={styles.navContainer}>
-            <Link to="/contact">Contact Me</Link>
-            <Link to="" onClick={handleLogout}>LOG OUT</Link>
-            <Link to="/works">Works</Link>
-            <Link to="/resume">Resume</Link>
+            <Link className={styles.link} to="/contact">Contact Me</Link>
+            <Link className={styles.link} to="" onClick={handleLogout}>LOG OUT</Link>
+            <Link className={styles.link} to="/works">Works</Link>
+            <Link className={styles.link} to="/resume">Resume</Link>
           </div>
         </nav>
     </>

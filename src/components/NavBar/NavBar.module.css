@@ -1,5 +1,31 @@
 .navContainer {
-  background-color: green;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  height: 30vh;
+}
+
+.link {
+  text-decoration: none;
+  color: #90e0ef;
+  width: 25vw;
+  font-size: 2.1rem;
+  margin: 0.5vw;
+  margin-left: 2vw;
+  padding: 5px 10px;
+  padding-bottom: 0px;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: #ffe8d6;
+  font-size: 2.3rem;
+  background: linear-gradient(45deg, #6f7992 25%, #dfe7fd);
+  border-radius: 15px;
+}
+
+@media only screen and (min-width:1500px) {
+  .navContainer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
