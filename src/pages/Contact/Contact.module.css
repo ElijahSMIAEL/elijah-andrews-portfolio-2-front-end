@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  color: #ffcdb2;
+  text-shadow: 4px 2px 1px black;
+}
+
+.contactsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.contactIcon > img {
+  width: 150px;
+  border-radius: 30px;
+}

@@ -1,5 +1,36 @@
 .container {
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bio {
+  margin-top: 2vh;
+  width: 75vw;
+  color: #f6bd60;
+  border-radius: 20px;
+  padding: 10px;
+  background: linear-gradient(20deg, #6f7992 30%, #dfe7fd 70%);
+  text-shadow: 3px 1px 1px black;
+}
+
+.header {
+  color: #ffcdb2;
+  text-shadow: 4px 2px 1px black;
+}
+
+.profilePic {
+  width: 150px;
+  border-radius: 50%;
+  padding: 4px;
+  background-color: #ffcdb2;
+  border: solid 3px black;
+  margin-right: 2vw;
 }

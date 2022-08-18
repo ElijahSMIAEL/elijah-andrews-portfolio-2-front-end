@@ -23,9 +23,26 @@
   border-radius: 15px;
 }
 
+.link:active {
+
+}
+
 @media only screen and (min-width:1500px) {
   .navContainer {
     flex-direction: row;
     justify-content: space-around;
+    height: 7vh;
+    text-align: center;
+  }
+  .link {
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    color: #ffe8d6;
+    width: 15vw;
+  }
+
+  .link:hover {
+    color: #5c374c;
+    background: linear-gradient(45deg, #f35b04 10%, #ffcb97 70%);
   }
 }

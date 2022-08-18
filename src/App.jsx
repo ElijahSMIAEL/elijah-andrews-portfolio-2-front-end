@@ -22,6 +22,7 @@ const App = () => {
     setUser(authService.getUser())
   }
 
+  
   return (
     <>
       <NavBar user={user} handleLogout={handleLogout} />
@@ -33,11 +34,11 @@ const App = () => {
         />
         <Route
           path='/contact'
-          element={user ? <Contact /> : <Login handleSignupOrLogin={handleSignupOrLogin} from={'contact'}/>}
+          element={<Contact />}
         />
         <Route
           path='/resume'
-          element={user ? <Resume /> : <Login handleSignupOrLogin={handleSignupOrLogin} from={'resume'}/>}
+          element={<Resume />}
         />
         <Route
           path='/works'
