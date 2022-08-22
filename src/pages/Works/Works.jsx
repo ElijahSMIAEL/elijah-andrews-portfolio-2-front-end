@@ -38,7 +38,7 @@ const Works = (props) => {
           :
           <></>
         }
-        { works ?          
+          { works ?          
           <div className={styles.worksContainer}>
           {works.map(work =>
             <WorkCard
@@ -46,9 +46,9 @@ const Works = (props) => {
             work={work}
             />
             )}
-        </div>
-        :
-        <h1 className={styles.loadMessage}>Loading Works...</h1>
+          </div>
+          :
+          <h1 className={styles.loadMessage}>Loading Works.</h1>
         }
       </main>
     </>
