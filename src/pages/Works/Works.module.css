@@ -6,6 +6,12 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+.loadMessage {
+  font-size: 3.5rem;
+  color: #ffcdb2;
+  text-shadow: 4px 4px 1px black;
+  text-align: center;
+}
 
 @media only screen and (min-width:1500px) {
   .worksContainer {

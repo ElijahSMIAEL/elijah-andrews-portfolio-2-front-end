@@ -38,14 +38,18 @@ const Works = (props) => {
           :
           <></>
         }
-        <div className={styles.worksContainer}>
+        { works ?          
+          <div className={styles.worksContainer}>
           {works.map(work =>
             <WorkCard
-              key={work._id}
-              work={work}
+            key={work._id}
+            work={work}
             />
-          )}
+            )}
         </div>
+        :
+        <h1 className={styles.loadMessage}>Loading Works...</h1>
+        }
       </main>
     </>
   )
