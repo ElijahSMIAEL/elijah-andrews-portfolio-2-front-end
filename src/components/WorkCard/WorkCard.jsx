@@ -20,6 +20,10 @@ const WorkCard = (props) => {
     }, 100)
   }
 
+  function toggle() {
+    setShowMore(!showMore)
+  }
+
   const contentAnimatedStyle = useSpring({
     height: showMore ? bounds.height : 0,
     overflow: "hidden"
@@ -29,7 +33,7 @@ const WorkCard = (props) => {
   
   return(
     <>
-    <div className="card" style={{width: 18 + 'rem'}} onMouseEnter={mouseOn} onMouseLeave={mouseOff}>
+    <div className="card" style={{width: 18 + 'rem'}} onMouseEnter={mouseOn} onMouseLeave={mouseOff} onClick={toggle}>
       <img className={styles.cardImgTop} src={work.photo} alt="Card cap"/>
       <h5 className="card-title">{work.title}</h5>
       <animated.div style={contentAnimatedStyle}>

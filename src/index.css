@@ -10,6 +10,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -48,6 +49,8 @@ code {
   height: fit-content;
   background: linear-gradient(0deg, #6f7992 25%, #dfe7fd);
   color: #ffcdb2;
+  box-shadow: 10px 10px 5px black;
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-width:1500px) {
@@ -55,4 +58,8 @@ code {
     background-image: url('/public/images/portfolio-background-2.jpg');
     background-size: cover;
   }
+}
+
+@media only screen and (max-width:850px) {
+  
 }

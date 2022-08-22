@@ -11,12 +11,17 @@
   align-items: center;
   color: #f6bd60;
   text-shadow: 3px 3px 1px black;
-  margin-bottom: 20px;
+  background: linear-gradient(0deg, #6f7992 25%, #dfe7fd);
+  border-radius: 30px;
+  margin: 20px 3vw 50px;
+  width: 27vw;
+  box-shadow: 15px 15px 5px black;
 }
 
 .header {
+  font-size: 3.5rem;
   color: #ffcdb2;
-  text-shadow: 4px 2px 1px black;
+  text-shadow: 4px 4px 1px black;
 }
 
 .contactsContainer {
@@ -30,6 +35,7 @@
   padding: 3px;
   background-color: black;
   border: solid 3px #ffcdb2;
+  box-shadow: 10px 10px 5px black;
 }
 
 .contactIcon {
@@ -40,16 +46,59 @@
 }
 
 .email {
+  width: 60vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   background: linear-gradient(0deg, #6f7992 25%, #dfe7fd);
   border-radius: 30px;
   padding-bottom: 20px;
+  box-shadow: 15px 15px 5px black;
 }
 
 .emailName {
   color: #f6bd60;
-  text-shadow: 2px 2px 1px black;
+  text-shadow: 3px 3px 1px black;
   margin-right: 20px;
+}
+
+@media only screen and (min-width:1500px) {
+  .container {
+    margin-top: 60px;
+  }
+  .email{
+    width: 50vw;
+  }
+  .contact {
+    width: 23vw;
+    margin: 60px 2vw;
+  }
+  .contactIcon > img {
+    width: 200px;
+  }
+  .contact > h3, .emailName > h2, .emailName > h3 {
+    font-size: 2.8rem;
+    text-shadow: 4px 4px 1px black;
+  }
+}
+
+@media only screen and (max-width:850px) {
+  .header {
+    margin-top: 250px;
+    font-size: 2.5rem ;
+  }
+  .contactIcon > img {
+    width: 120px;
+  }
+  .contact{
+    width: 40vw;
+    margin-bottom: 30px;
+  }
+  .email {
+    width: 86vw;
+    flex-direction: column;
+  }
+  .emailName > h3 {
+    font-size: 1.5rem;
+  }
 }

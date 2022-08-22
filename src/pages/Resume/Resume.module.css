@@ -6,9 +6,26 @@
 .resume > img {
   height: 67vh;
   border: solid black;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px black;
 }
 
 .resume > img:hover {
   filter:blur(1px)
 }
 
+@media only screen and (min-width:1500px) {
+  .resumeContainer {
+    margin-top: 60px;
+  }
+  .resume > img {
+    height: 80vh;
+  }
+}
+
+@media only screen and (max-width:850px) {
+  .resume > img {
+    margin-top: 300px;
+    height: 50vh;
+  }
+}

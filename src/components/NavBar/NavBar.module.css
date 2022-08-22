@@ -2,14 +2,15 @@
   display: flex;
   flex-direction: column;
   height: 30vh;
+  margin-top: 0.5vw;
 }
 
 .link {
   text-decoration: none;
   color: #90e0ef;
   width: 25vw;
+  text-shadow: 3px 3px 1px black;
   font-size: 2.1rem;
-  margin: 0.5vw;
   margin-left: 2vw;
   padding: 5px 10px;
   padding-bottom: 0px;
@@ -19,13 +20,12 @@
   text-decoration: none;
   color: #ffe8d6;
   font-size: 2.3rem;
+  text-shadow: none;
   background: linear-gradient(45deg, #6f7992 25%, #dfe7fd);
   border-radius: 15px;
+  box-shadow: 10px 10px 5px black;
 }
 
-.link:active {
-
-}
 
 @media only screen and (min-width:1500px) {
   .navContainer {
@@ -44,5 +44,20 @@
   .link:hover {
     color: #5c374c;
     background: linear-gradient(45deg, #f35b04 10%, #ffcb97 70%);
+  }
+}
+
+@media only screen and (max-width:850px) {
+  .link {
+    width: 100vw;
+    margin-left: 0px;
+    background: linear-gradient(45deg, #6f7992 25%, #dfe7fd);
+    border-bottom: solid 2px black;
+  }
+  .navContainer{
+    margin-top: 0px;
+    top: 0;
+    position: fixed;
+    z-index: 1;
   }
 }

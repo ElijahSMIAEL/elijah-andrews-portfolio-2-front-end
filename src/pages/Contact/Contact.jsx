@@ -16,7 +16,7 @@ const Contact = () => {
         </div>
         </div>
         <div className={styles.email}>
-        <a href="mailto:elijah.smiael@gmail.com" className={styles.contactIcon}><img src="/images/EmailLogo.png" alt="Email" /></a>
+        <a href="mailto:elijah.smiael@gmail.com" className={styles.contactIcon}><img src="/images/EmailLogo.png" alt="Email" className={styles.emailIcon}/></a>
         <div className={styles.emailName}>
         <h2>Email:</h2>
         <h3>elijah.smiael@gmail.com</h3>
