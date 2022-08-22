@@ -3,9 +3,11 @@ import styles from './Resume.module.css'
 const Resume = () => {
 
   return(
-    <>
-    <h1>Resume Component</h1>
-    </>
+    <main>
+      <div className={styles.resumeContainer}>
+      <a className={styles.resume} href="https://docs.google.com/document/d/1EBNw4IOjj9tg1ZdVhO-Cuc-TmvK5Jb4f04-Ea-Z4XB0/edit?usp=sharing" target='_blank' rel="noopener noreferrer" ><img src="/images/ResumeScreenshot.png" alt="Resume" /></a>
+      </div>
+    </main>
   )
 }
 

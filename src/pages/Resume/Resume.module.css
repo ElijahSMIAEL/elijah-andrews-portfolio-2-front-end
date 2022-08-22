@@ -1,0 +1,14 @@
+.resumeContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.resume > img {
+  height: 67vh;
+  border: solid black;
+}
+
+.resume > img:hover {
+  filter:blur(1px)
+}
+

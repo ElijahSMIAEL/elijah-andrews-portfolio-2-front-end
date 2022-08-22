@@ -5,6 +5,15 @@
   align-items: center;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f6bd60;
+  text-shadow: 3px 3px 1px black;
+  margin-bottom: 20px;
+}
+
 .header {
   color: #ffcdb2;
   text-shadow: 4px 2px 1px black;
@@ -13,11 +22,34 @@
 .contactsContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 20px;
 }
 
 .contactIcon > img {
   width: 150px;
   border-radius: 30px;
+  padding: 3px;
+  background-color: black;
+  border: solid 3px #ffcdb2;
+}
+
+.contactIcon {
+  margin: 20px;
+  margin-bottom: 0px;
+  border: solid 3px black;
+  border-radius: 30px;
+}
+
+.email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(0deg, #6f7992 25%, #dfe7fd);
+  border-radius: 30px;
+  padding-bottom: 20px;
+}
+
+.emailName {
+  color: #f6bd60;
+  text-shadow: 2px 2px 1px black;
+  margin-right: 20px;
 }
