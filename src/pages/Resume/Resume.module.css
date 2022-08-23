@@ -11,7 +11,8 @@
 }
 
 .resume > img:hover {
-  filter:blur(1px)
+  filter:blur(1px);
+  height: 68vh;
 }
 
 @media only screen and (min-width:1500px) {
@@ -21,11 +22,17 @@
   .resume > img {
     height: 80vh;
   }
+  .resume > img:hover {
+    height: 82vh;
+  }
 }
 
 @media only screen and (max-width:850px) {
   .resume > img {
     margin-top: 300px;
     height: 50vh;
+  }
+  .resume > img:hover {
+    height: 51vh;
   }
 }
