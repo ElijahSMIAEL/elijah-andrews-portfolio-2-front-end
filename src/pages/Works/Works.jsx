@@ -16,7 +16,7 @@ const Works = (props) => {
           :
           <></>
         }
-          { !(works === []) ?          
+          { works.length ?          
           <div className={styles.worksContainer}>
           {works.map(work =>
             <WorkCard
