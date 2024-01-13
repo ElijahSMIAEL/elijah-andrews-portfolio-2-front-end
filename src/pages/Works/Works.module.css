@@ -1,5 +1,7 @@
+
 .worksContainer {
-  margin: 50px 0px 200px;
+  animation: 1s ease-out 0s 1 SlideInFromTop;
+  margin: 0px 0px 200px;
   display: grid;
   justify-items: center;
   width: 100vw;
@@ -11,6 +13,17 @@
   color: #ffcdb2;
   text-shadow: 4px 4px 1px black;
   text-align: center;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  padding-top: 7vh;
+  background: rgba(57, 57, 57, 0.4);
+  z-index: -1;
+  width: 100vw;
+  height:93vh;
 }
 
 @media only screen and (min-width:1500px) {

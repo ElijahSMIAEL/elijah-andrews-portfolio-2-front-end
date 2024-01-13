@@ -8,6 +8,7 @@ import * as authService from './services/authService'
 import Contact from './pages/Contact/Contact'
 import Resume from './pages/Resume/Resume'
 import Works from './pages/Works/Works'
+import { AnimatePresence } from 'framer-motion'
 
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
@@ -50,25 +51,28 @@ const App = () => {
   return (
     <>
       <NavBar user={user} handleLogout={handleLogout} />
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route
-          path="/login"
-          element={<Login handleSignupOrLogin={handleSignupOrLogin} />}
-        />
-        <Route
-          path='/contact'
-          element={<Contact />}
-        />
-        <Route
-          path='/resume'
-          element={<Resume />}
-        />
-        <Route
-          path='/works'
-          element={<Works profile={user?.profile} handleAddWork={handleAddWork} works={works}/>}
-        />
-      </Routes>
+
+      <AnimatePresence>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route
+            path="/login"
+            element={<Login handleSignupOrLogin={handleSignupOrLogin} />}
+          />
+          <Route
+            path='/contact'
+            element={<Contact />}
+          />
+          <Route
+            path='/resume'
+            element={<Resume />}
+          />
+          <Route
+            path='/works'
+            element={<Works profile={user?.profile} handleAddWork={handleAddWork} works={works}/>}
+          />
+        </Routes>
+      </AnimatePresence>
     </>
   )
 }

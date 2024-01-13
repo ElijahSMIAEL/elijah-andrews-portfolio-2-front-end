@@ -3,15 +3,19 @@ import styles from './Landing.module.css'
 const Landing = () => {
 
   return (
+    <div className={styles.overlay}>
     <main className={styles.container}>
       <div className={styles.heading}>
-      <img src="/images/ElijahAndrews(1).jpg" alt="Elijah" className={styles.profilePic}/>
       <h1 className={styles.header}>Elijah Andrews</h1>
       </div>
       <div className={styles.bio}>
-        <h3>I am a recent software-engineering bootcamp graduate. I greatly enjoy working on React projects, but I am always looking for new challenges that widen my perspective on tech.</h3>
+        <h3>I am a developer working mainly with computer hardware and accessories 
+        </h3>
+        <h3>Developing software provides new challenges that I seek to learn from</h3>
+        <h3>I enjoy writing web applications, especially using React, however I will not shy away from unfamiliar territory</h3>
       </div>
     </main>
+    </div>
   )
 }
 

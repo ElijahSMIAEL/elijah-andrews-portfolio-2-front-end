@@ -9,7 +9,7 @@ const NavBar = ({ user, handleLogout }) => {
             { user &&
               <Link className={styles.link} to="" onClick={handleLogout}>LOG OUT</Link>
             }
-            <Link className={styles.link} to="">About</Link>
+            <Link className={styles.link} to="">About Me</Link>
             <Link className={styles.link} to="/works">Works</Link>
             <Link className={styles.link} to="/resume">Resume</Link>
             <Link className={styles.link} to="/contact">Contact Me</Link>

@@ -1,5 +1,5 @@
 import styles from './Resume.module.css'
-
+import { motion } from 'framer-motion'
 const Resume = () => {
 
   return(

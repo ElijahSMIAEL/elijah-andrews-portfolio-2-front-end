@@ -1,3 +1,4 @@
+
 body {
   background-image: url('/public/images/portfolio-medium-background-2.jpg');
   background-size: cover;
@@ -11,52 +12,69 @@ body {
 }
 
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.card-body {
-  padding-top: 0px;
-}
-
 .list-group-item {
+  border: solid 1px grey;
   background: none;
   padding: 0px;
   padding: 10px;
 }
 
 .card-link {
-  color: #f6bd60;
+  font-size: 1.0rem;
+  text-decoration: none;
+  color: white;
   padding: 10px 50px;
+  display: inline-block;
+  position: relative;
 }
 
 .card-link:hover {
-  color: #f6bd60;
-  text-shadow: 2px 2px 5px black;
+  color: #ffffff;
+}
+
+.card-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.card-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .card-title {
   font-size: 1.75rem;
   color: white;
-  text-shadow: 2px 2px 1px black;
 }
 
 .card {
   text-align: center;
   padding: 5px;
-  border: solid 3px #415a77;
+  border: solid 2px grey;
   height: fit-content;
-  background: linear-gradient(0deg, #6f7992 25%, #dfe7fd);
-  color: #ffcdb2;
+  background: rgba(10, 10, 10, 0.9);
+  color: White;
   box-shadow: 10px 10px 5px black;
   margin-bottom: 40px;
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
 @media only screen and (min-width:1500px) {
   body {
-    background-image: url('/public/images/portfolio-background-2.jpg');
-    background-size: cover;
+    background-image: url('/public/images/eli-2-edited.jpg');
   }
 }
 
