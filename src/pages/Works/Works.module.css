@@ -1,7 +1,15 @@
+@keyframes SlideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 
 .worksContainer {
-  animation: 1s ease-out 0s 1 SlideInFromTop;
-  margin: 0px 0px 200px;
+  animation: 1s ease-out 0s 1 SlideInFromRight;
+  margin: 0;
   display: grid;
   justify-items: center;
   width: 100vw;

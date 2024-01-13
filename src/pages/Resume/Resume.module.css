@@ -1,18 +1,41 @@
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(110%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 .resumeContainer {
   display: flex;
   justify-content: center;
+  margin-bottom: 0vh;
+  margin-top: 3vh;
 }
 
+
 .resume > img {
-  height: 67vh;
-  border: solid black;
-  border-radius: 10px;
-  box-shadow: 10px 10px 5px black;
+  animation: 1s ease-out 0s 1 slideInFromBottom;
+  height: 63vh;
+  border: solid 2px black;
+  border-radius: 2px;
 }
 
 .resume > img:hover {
   filter:blur(1px);
-  height: 68vh;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+  background: rgba(57, 57, 57, 0.4);
+  z-index: -1;
+  width: 100vw;
+  height:93vh;
 }
 
 @media only screen and (min-width:1500px) {
@@ -20,10 +43,10 @@
     margin-top: 60px;
   }
   .resume > img {
-    height: 80vh;
+    height: 72vh;
   }
   .resume > img:hover {
-    height: 82vh;
+    height: 73vh;
   }
 }
 

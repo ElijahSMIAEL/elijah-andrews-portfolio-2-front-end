@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import { useSpring, animated } from 'react-spring'
+// import { useSpring, animated } from 'react-spring'
 import styles from './WorkCard.module.css'
-import useMeasure from "react-use-measure"
+// import useMeasure from "react-use-measure"
 
 const WorkCard = (props) => {
   const work = props.work
   const [showMore, setShowMore] = useState(false)
-  const [ref, bounds] = useMeasure()
+  // const [ref, bounds] = useMeasure()
 
 
 
@@ -24,10 +24,10 @@ const WorkCard = (props) => {
     setShowMore(!showMore)
   }
 
-  const contentAnimatedStyle = useSpring({
-    height: showMore ? bounds.height : 0,
-    overflow: "hidden"
-  })
+  // const contentAnimatedStyle = useSpring({
+  //   height: showMore ? bounds.height : 0,
+  //   overflow: "hidden"
+  // })
 
   
   
@@ -36,8 +36,7 @@ const WorkCard = (props) => {
     <div className="card" style={{width: 18 + 'rem'}} onMouseEnter={mouseOn} onMouseLeave={mouseOff} onClick={toggle}>
       <img className={styles.cardImgTop} src={work.photo} alt="Card cap"/>
       <h5 className="card-title">{work.title}</h5>
-      <animated.div style={contentAnimatedStyle}>
-      <div ref={ref}>
+      <div>
       <div className="card-body">
         <p className="card-text">{work.description}</p>
       </div>
@@ -46,7 +45,6 @@ const WorkCard = (props) => {
         <li className="list-group-item"><a href={work.deployedLink} target="_blank" rel='noopener noreferrer' className="card-link">Deployed Site</a></li>
       </ul>
       </div>
-      </animated.div>
     </div>
     </>
   )
