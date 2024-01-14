@@ -18,7 +18,12 @@
   align-items: left;
 }
 
-
+.overlay {
+  background: rgba(57, 57, 57, 0.4);
+  z-index: -1;
+  width: 100vw;
+  height: 93vh;
+}
 
 .heading {
   animation: 1s ease-out 0s 1 slideInFromLeft;
@@ -58,12 +63,6 @@
 @media only screen and (min-width:1500px) {
   .container {
     margin-top: 0px;
-  }
-  .overlay {
-    background: rgba(57, 57, 57, 0.4);
-    z-index: -1;
-    width: 100vw;
-    height: 93vh;
   }
   .profilePic {
     width: 200px;
