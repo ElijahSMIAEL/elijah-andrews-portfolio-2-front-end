@@ -15,11 +15,17 @@
   background: rgba(57, 57, 57, 0.4);
 }
 
-
+.contactText > p {
+  margin-top: 1vh;
+  padding-top: 1vh;
+  width: 15vw;
+  border-top: solid 1px;
+  font-size: 1.1rem;
+}
 
 .contact {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   color: #ffffff;
   background: rgba(10, 10, 10, 0.9);
@@ -27,6 +33,12 @@
   border: solid 2px grey;
   margin-top: 1vh;
   width: 47vw;
+  height: 28vh;
+}
+
+.contactText {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact:first-child {
@@ -46,12 +58,15 @@
 }
 
 .contactIcon > img {
-  width: 150px;
-  border-radius: 4px;
-  padding: 3px;
+  width: 15vw;
+  border-radius: 12px;
   background-color: black;
   border: solid 3px grey;
-  box-shadow: 10px 10px 5px black;
+}
+
+.contactIcon > img:hover {
+  filter: blur(1px);
+  width: 16vw;
 }
 
 .contactIcon {
@@ -71,13 +86,17 @@
   .contact {
     width: 28vw;
     margin-top: 1vh;
-    height: 30vh;
+    height: 25vh;
   }
   .contactIcon > img {
-    width: 200px;
+    width: 15vh;
   }
   .contact > h3 {
     font-size: 2.8rem;
+  }
+  .contactIcon > img:hover {
+    filter: blur(1px);
+    width: 16vh;
   }
 }
 
