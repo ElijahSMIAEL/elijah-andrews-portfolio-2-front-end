@@ -1,6 +1,1 @@
-# Elijah Andrews Portfolio
-
-### This is my improved portfolio website, built with React as a decoupled MERN-Stack application.
-
-## [Deployed Link](https://elijahc-portfolio.netlify.app/)
-
+This is my Portfolio Website! It is build using MERN-Stack. The deployed website can be found here: https://elijahc-portfolio.netlify.app/
